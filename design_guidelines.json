@@ -1,0 +1,148 @@
+{
+  "project_name": "PPE Pro Solutions",
+  "app_type": "e-commerce (multi-page B2B/B2C hybrid)",
+  "design_philosophy": {
+    "core_archetype": "Premium Sensory Minimalism + Industrial Technical Authority",
+    "signals": [
+      "Product as Hero (high-contrast product photography on warm off-white/charcoal surfaces)",
+      "Quiet luxury, exquisite spacing, material micro-textures, restrained color with single high-visibility safety accent",
+      "No medical pastel cliches, no blue-gloved dropship imagery, no skull/tattoo tropes, no fake urgency timers"
+    ],
+    "theme_mode": "Light/Dark hybrid with warm off-white surfaces (#F7F6F3 / #121214) and Charcoal/Near-Black anchors (#0E0F12 / #1A1C20)"
+  },
+  "colors": {
+    "anchor": "#0E0F12",
+    "charcoal": "#1C1E24",
+    "surface_warm_light": "#F7F6F3",
+    "surface_warm_card": "#FFFFFF",
+    "surface_warm_dark": "#121214",
+    "surface_card_dark": "#1A1C22",
+    "text_primary_light": "#0E0F12",
+    "text_muted_light": "#5A5E6B",
+    "text_primary_dark": "#F4F4F6",
+    "text_muted_dark": "#9498A6",
+    "accent_primary": "#FF5500",
+    "accent_hover": "#E04800",
+    "accent_signal_yellow": "#FFB800",
+    "status_in_stock": "#10B981",
+    "status_low_stock": "#F59E0B",
+    "status_out_stock": "#EF4444",
+    "border_light": "#E2E0D8",
+    "border_dark": "#2A2D36",
+    "rules": [
+      "Use #FF5500 (Safety Orange) or #FFB800 (Signal Yellow) ONLY for CTAs, active stock status, price break highlights, and primary key interaction triggers.",
+      "Never use medical pastel mint, generic baby blue, or full-screen glossy gradients.",
+      "All surfaces cut off from header must use semi-solid or glass backdrop blur with explicit text colors (no fully transparent header or dropdowns)."
+    ]
+  },
+  "typography": {
+    "headline_font": "Space Grotesk / Cabinet Grotesk / Barlow Condensed (Bold/SemiBold, tracking-tight)",
+    "body_font": "Inter / DM Sans (Regular/Medium, tracking-normal, tabular figures for specs/prices)",
+    "monospace_font": "JetBrains Mono / IBM Plex Mono (for mil thickness, pinhole AQL ratings, SKU numbers, box counts)",
+    "rules": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-sm sm:text-base leading-relaxed text-muted-foreground",
+      "spec_label": "text-xs font-mono uppercase tracking-widest text-muted-foreground",
+      "forbidden": "NO decorative, blackletter, gothic, or tattoo-styled fonts. Specs & medical/industrial credibility are primary."
+    }
+  },
+  "layout_and_grids": {
+    "spacing_philosophy": "Generous Spacing (2-3x default padding). Use p-6, p-8, p-12, p-16 for section rhythm.",
+    "container_padding": "px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto",
+    "hero_structure": "Split high-impact product spotlight (Black Nitrile Glove + Case Box shot on neutral warm studio ground) + 6 Industry Entry Points directly beneath hero grid.",
+    "bento_grid_modes": {
+      "industry_grid": "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6",
+      "material_grid": "grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8",
+      "pdp_layout": "grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12"
+    }
+  },
+  "navigation_and_header": {
+    "desktop": "Sticky top bar with backdrop-blur-xl bg-white/85 dark:bg-black/85 border-b border-border z-50. Must feature: Brand Logo ('PPE PRO SOLUTIONS'), Category Megamenu (By Industry, By Material, All Gloves), Glove Selection Guide Link, Quick Bulk Quote Button, Cart Icon with Badge, and Search Bar.",
+    "mobile": "Sticky header with mobile hamburger drawer + persistent sticky mobile bottom Add-to-Cart bar on Product Detail Pages.",
+    "rules": "Header background must NEVER be transparent. Always set explicit background color and z-50."
+  },
+  "components_and_features": {
+    "catalog_filtering": "Filter by Material (Nitrile, Latex, Chloroprene), Thickness (3 mil - 8+ mil), Texture (Full, Palm, Diamond Grip), Color (Black, Cobalt Blue, Violet, White, Green), Industry, and Usage Grade (Exam/Medical, Industrial/Heavy Duty, Food Safe).",
+    "product_detail_page": {
+      "gallery": "Multi-angle product view (Box + Individual Glove, Palm Texture close-up, Hand fit stretch, Case Packaging).",
+      "specs_table": "Data-dense technical spec sheet tab with Mil Thickness (Palm vs Finger), Tensile Strength (MPa), Elongation (%), AQL Pinhole level (1.5 Exam Grade), Powder Content, Finish, Cuff length, Chemical Resistance matrix.",
+      "variant_selectors": "Size Selector (XS, S, M, L, XL, XXL) with live stock indicator per size + Pack Size Selector (Box of 100 vs Case of 1000) + Tiered Volume Price Break table ($/box at 1-4 cases, 5-19 cases, 20+ cases).",
+      "sticky_mobile_cart": "Bottom bar containing active price, selected size, and instant 'Add to Cart' button."
+    },
+    "industry_landing_pages": [
+      "Tattoo & Body Art (Tactical Black Nitrile, High Tactility, Ink/Vaseline Slip Resistance)",
+      "Beauty & Personal Care (Elegance Violet/Pink/Black, Hair Dye Chemical Resistance)",
+      "Medical & Healthcare (Fentanyl Tested, Chemo Rated, AQL 1.5 Medical Grade Nitrile)",
+      "Food Service & Processing (FDA Title 21 CFR Compliant, High-Visibility Blue, Textured Grip)",
+      "Laboratory & Cleanroom (Powder-Free Chloroprene/Nitrile, Low Extractables, Precision Touch)",
+      "Industrial & Automotive (Heavy Duty 6-8 mil Diamond Textured Nitrile, Oil/Solvent Protection)"
+    ],
+    "material_guides": [
+      "Nitrile (Puncture resistant, latex-free, chemical barrier)",
+      "Latex (Maximum elasticity, second-skin comfort, biodegradable)",
+      "Chloroprene / Neoprene (Latex-like stretch + Nitrile chemical strength)"
+    ],
+    "interactive_tools": [
+      "Sizing Guide Modal with printable hand measurement chart & palm width calculator",
+      "Glove Selection Wizard / Finder Quiz",
+      "Bulk Custom Quote Request Form with instant quantity tier calculator",
+      "Mock Cart & Checkout Flow with shipping calculator and order summary"
+    ]
+  },
+  "motion_and_interactions": {
+    "library": "framer-motion",
+    "effects": "Subtle image transitions, smooth tab switches, slide-over cart drawer, hover lift on product cards (y: -3px), pulsing live stock status badge.",
+    "reduced_motion": "Respect prefers-reduced-motion via Framer Motion useReducedMotion hook or standard CSS media query."
+  },
+  "media_assets": {
+    "product_and_industry_urls": [
+      {
+        "category": "Tattoo & Body Art Gloves",
+        "url": "https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHw0fHx0YXR0b28lMjBhcnRpc3QlMjBnbG92ZXN8ZW58MHx8fHwxNzg4NzQ1MjgyfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Tattoo artist with black nitrile gloves performing precise work"
+      },
+      {
+        "category": "Medical & Healthcare Gloves",
+        "url": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwyfHxwcm90ZWN0aXZlJTIwZ2xvdmVzfGVufDB8fHx8MTc4ODc0NTI4M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Donning exam blue nitrile gloves for clinical healthcare procedure"
+      },
+      {
+        "category": "Laboratory & Cleanroom Gloves",
+        "url": "https://images.unsplash.com/photo-1582560475093-ba66accbc424?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHxfHxsYWJvcmF0b3J5JTIwc2NpZW50aXN0JTIwZ2xvdmVzfGVufDB8fHx8MTc4ODc0NTI4Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Lab scientist wearing green protective gloves handling micro-pipette"
+      },
+      {
+        "category": "Disposable Protective Gloves Stack",
+        "url": "https://images.unsplash.com/photo-1599412227383-b7d4751c8765?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwzfHxwcm90ZWN0aXZlJTIwZ2xvdmVzfGVufDB8fHx8MTc4ODc0NTI4M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "High contrast blue protective nitrile glove product showcase"
+      },
+      {
+        "category": "Hygiene & Safety Latex Gloves",
+        "url": "https://images.pexels.com/photos/7856715/pexels-photo-7856715.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Pair of disposable medical gloves on clean neutral surface"
+      }
+    ]
+  },
+  "testing_requirements": {
+    "data_testid_rule": "ALL interactive components, buttons, inputs, filter options, size buttons, price displays, cart items, stock status badges, and tab triggers MUST contain kebab-case data-testid attributes.",
+    "examples": [
+      "data-testid='navbar-brand-logo'",
+      "data-testid='filter-material-nitrile'",
+      "data-testid='product-card-black-nitrile-pro'",
+      "data-testid='pdp-size-selector-medium'",
+      "data-testid='pdp-add-to-cart-button'",
+      "data-testid='bulk-quote-submit-btn'",
+      "data-testid='cart-drawer-checkout-button'"
+    ]
+  },
+  "universal_guidelines_for_main_agent": [
+    "Never use generic centered layouts or unstyled default HTML dropdowns/inputs.",
+    "Use Shadcn UI components for dropdowns, dialogs, tabs, accordions, toasts, and custom selects.",
+    "Add transition effects on specific properties (e.g., transition: background-color 0.2s ease, border-color 0.2s ease) and EXCLUDE transform from global transitions.",
+    "All .js / .jsx files in the React codebase must maintain clean modular structures, clear state management (e.g., Zustand or React Context for cart/filters), and accessible keyboard focus states.",
+    "Ensure total responsive fidelity across mobile screens (375px), tablets (768px), and wide monitors (1440px+)."
+  ]
+}
