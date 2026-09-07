@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 const StockBadge = ({ inStock }) => (
   <span
@@ -15,7 +14,7 @@ const StockBadge = ({ inStock }) => (
 
 export const ProductCard = ({ product }) => {
   return (
-    <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.2 }}>
+    <div className="transition-transform duration-150 hover:-translate-y-1">
       <Link
         to={`/products/${product.slug}`}
         className="group block bg-white rounded-2xl border border-border overflow-hidden h-full"
@@ -51,6 +50,6 @@ export const ProductCard = ({ product }) => {
           </div>
         </div>
       </Link>
-    </motion.div>
+    </div>
   );
 };

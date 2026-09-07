@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { INDUSTRIES } from "@/data/industries";
-import { motion } from "framer-motion";
 
 export const IndustryStrip = () => {
   return (
@@ -11,14 +10,8 @@ export const IndustryStrip = () => {
           <h2 className="font-head text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-ink">What's your industry?</h2>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
-          {INDUSTRIES.map((ind, idx) => (
-            <motion.div
-              key={ind.slug}
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.35, delay: idx * 0.05 }}
-            >
+          {INDUSTRIES.map((ind) => (
+            <div key={ind.slug}>
               <Link
                 to={`/industries/${ind.slug}`}
                 className="group block bg-white border border-border rounded-2xl p-4 sm:p-5 h-full hover:border-safety-orange transition-colors"
@@ -29,7 +22,7 @@ export const IndustryStrip = () => {
                 </div>
                 <p className="font-head font-semibold text-sm text-ink leading-tight">{ind.shortName}</p>
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

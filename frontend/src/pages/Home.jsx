@@ -5,7 +5,6 @@ import { ProductCard } from "@/components/ProductCard";
 import { IndustryStrip } from "@/components/IndustryStrip";
 import { QuoteForm } from "@/components/QuoteForm";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
 import { ShieldCheck, FileText, Truck, Phone, ArrowRight } from "lucide-react";
 
 const HERO_IMAGE = "https://static.prod-images.emergentagent.com/jobs/a8df6e5f-1344-4913-b2d1-d8b4f18b5a89/images/d62b56a508392b78bd69ec9678bab8c3a375fdae70b3853c9ce9e22fa8b3e3b6.jpeg";
@@ -28,7 +27,7 @@ export const Home = () => {
     <div data-testid="home-page">
       <section className="bg-ink text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16 sm:py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+          <div>
             <p className="text-xs font-mono uppercase tracking-widest text-safety-yellow mb-4">Since 2020 · Florida Warehousing · Nationwide Shipping</p>
             <h1 className="font-head text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance mb-5">
               Brand-name gloves.<br />Real specs. Real pricing.
@@ -44,12 +43,12 @@ export const Home = () => {
                 <Link to="/quote">Get Case Pricing</Link>
               </Button>
             </div>
-          </motion.div>
-          <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }} className="relative">
+          </div>
+          <div className="relative">
             <div className="aspect-square rounded-3xl overflow-hidden bg-charcoal">
               <img src={HERO_IMAGE} alt="Black nitrile glove box and glove" className="w-full h-full object-cover" />
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -59,11 +58,11 @@ export const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {TRUST_POINTS.map((point, idx) => (
-              <motion.div key={idx} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.08 }}>
+              <div key={idx}>
                 <point.icon className="w-7 h-7 text-safety-orange mb-3" />
                 <h3 className="font-head font-semibold text-ink mb-1.5">{point.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{point.text}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
